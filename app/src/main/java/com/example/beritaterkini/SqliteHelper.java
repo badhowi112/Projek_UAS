@@ -111,12 +111,9 @@ public class SqliteHelper extends SQLiteOpenHelper {
                 new String[]{email},//Where clause
                 null, null, null);
 
-        if (cursor != null && cursor.moveToFirst()&& cursor.getCount()>0) {
-            //if cursor has value then in user database there is user associated with this given email so return true
-            return true;
-        }
+        //if cursor has value then in user database there is user associated with this given email so return true
+        return cursor != null && cursor.moveToFirst() && cursor.getCount() > 0;
 
         //if email does not exist return false
-        return false;
     }
 }

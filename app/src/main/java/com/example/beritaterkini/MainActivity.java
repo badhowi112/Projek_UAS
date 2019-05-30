@@ -15,7 +15,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.support.v7.widget.SearchView;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.beritaterkini.api.ApiClient;
@@ -191,8 +190,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()==R.id.crud){
             startActivity(new Intent(this, crudActivity.class));
-        } else if (item.getItemId() == R.id.home) {
-            startActivity(new Intent(this, HomeActivity.class));
+        } else if (item.getItemId() == R.id.chat) {
+            startActivity(new Intent(this, chatActivity.class));
         } else if (item.getItemId() == R.id.logout) {
             startActivity(new Intent(this, LogoutActivity.class));
         }

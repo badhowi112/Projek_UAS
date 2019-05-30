@@ -15,18 +15,20 @@
 
         />
     <item
-        android:id="@+id/home"
+        android:id="@+id/chat"
         android:orderInCategory="100"
-        android:title="Home"
-        app:showAsAction="never"
+        android:title="Chatting"
+        android:icon="@drawable/ic_chat"
+        app:showAsAction="always"
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         />
 
     <item
         android:id="@+id/crud"
         android:orderInCategory="100"
-        android:title="Crud"
-        app:showAsAction="never"
+        android:title="Crud Data Warga"
+        android:icon="@drawable/ic_library"
+        app:showAsAction="always"
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         />
     <item
@@ -37,5 +39,10 @@
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         />
 
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/Testing"
+        app:showAsAction="never" />
 
 </menu>
