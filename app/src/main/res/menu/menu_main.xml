@@ -45,4 +45,13 @@
         android:title="@string/Testing"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="Tentang Kami"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_info"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+        />
+
 </menu>

@@ -194,6 +194,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             startActivity(new Intent(this, chatActivity.class));
         } else if (item.getItemId() == R.id.logout) {
             startActivity(new Intent(this, LogoutActivity.class));
+        }else if (item.getItemId() == R.id.about) {
+            startActivity(new Intent(this, AboutActivity.class));
         }
 
         return true;
